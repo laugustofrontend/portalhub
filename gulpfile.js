@@ -15,7 +15,11 @@ gulp.task('sass', () => {
 
 gulp.task('imagemin', () => {
   gulp.src('src/assets/images/**/*')
-    .pipe(imagemin())
+    .pipe(imagemin({
+      interlaced: true,
+      progressive: true,
+      optimizationLevel: 7
+    }))
     .pipe(gulp.dest('dist/assets/images'))
 })
 
