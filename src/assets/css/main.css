@@ -36020,8 +36020,6 @@ body {
 
 .finance .tab-content {
   width: 100%; }
-  .finance .tab-content .tab-pane:first-child {
-    display: block; }
 
 .finance-balance-item_balance {
   font-size: 30px;
@@ -36072,6 +36070,14 @@ body {
         width: 15%; }
     .finance-patrimony .nav .finance-patrimony-list, .finance-patrimony .nav .finance-patrimony-graphic {
       color: transparent; }
+  .finance-patrimony .tab-pane {
+    width: 100%; }
+    .finance-patrimony .tab-pane:last-child {
+      display: none; }
+  .finance-patrimony-content {
+    padding: 0;
+    padding-top: 39px;
+    background: #13232d; }
   .finance-patrimony-list, .finance-patrimony-graphic {
     display: block;
     height: 100%;
@@ -36091,6 +36097,40 @@ body {
   .finance-patrimony-list::before {
     background-image: url("../images/icons/icon-lista.svg");
     background-size: 22px; }
+  .finance-patrimony-list-titles {
+    font-size: 14px;
+    color: #f7ae18; }
+    .finance-patrimony-list-titles .col-lg-2:first-child {
+      padding-bottom: 5px;
+      padding-left: 25px; }
+  .finance-patrimony-list-item {
+    overflow: hidden; }
+    .finance-patrimony-list-item_title {
+      padding: 0; }
+      .finance-patrimony-list-item_title p {
+        color: white; }
+      .finance-patrimony-list-item_title_plus i {
+        color: #00e8b6; }
+      .finance-patrimony-list-item_title_plus::before {
+        content: '';
+        clear: both;
+        display: block;
+        width: 1px;
+        height: 300%;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        opacity: .3;
+        background: #979797; }
+    .finance-patrimony-list-item .badge {
+      top: 0; }
+    .finance-patrimony-list-item.card {
+      margin-bottom: 3px;
+      background: #0e1c24;
+      border: none; }
+      .finance-patrimony-list-item.card .card-header {
+        border: none;
+        border-radius: 0; }
   .finance-patrimony-graphic::before {
     background-image: url("../images/icons/icon-pizza.svg");
     background-size: 100%; }

@@ -330,11 +330,6 @@ body {
 
     .tab-content {
         width: 100%;
-
-
-        .tab-pane:first-child {
-            display: block;
-        }
     }
 
     &-balance {
@@ -429,6 +424,22 @@ body {
             }
         }
 
+        .tab-pane {
+            width: 100%;
+            &:last-child {
+                display: none;
+            }
+        }
+
+        &-content {
+            padding: 0;
+            padding: {
+                top: 39px;
+            }
+
+            background: #13232d;
+        }
+
         &-list,
         &-graphic {
             display: block;
@@ -456,7 +467,6 @@ body {
             }
         }
 
-
         &-list {
             &::before {
                 background: {
@@ -465,7 +475,75 @@ body {
                 }
 
             }
+
+            &-titles {
+                font: {
+                    size: 14px;
+                }
+
+                .col-lg-2:first-child {
+                    padding: {
+                        bottom: 5px;
+                        left: 25px;
+                    }
+
+                }
+                color: #f7ae18;
+            }
+
+            &-item {
+                overflow: hidden;
+
+                &_title {
+                    padding: 0;
+
+
+                    p {
+                        color: white;
+                    }
+
+                    &_plus {
+                        i {
+                            color: #00e8b6;
+                        }
+
+                        &::before {
+                            content: '';
+                            clear: both;
+                            display: block;
+
+                            width: 1px;
+                            height: 300%;
+                            position: absolute;
+                            left: 0;
+                            top: -20px;
+
+                            opacity: .3;
+                            background: #979797;
+                        }
+                    }
+                }
+
+                .badge {
+                    top: 0;
+                }
+
+                &.card {
+                    margin: {
+                        bottom: 3px;
+                    }
+
+                    background: #0e1c24;
+                    border: none;
+
+                    .card-header {
+                        border: none;
+                        border-radius: 0;
+                    }
+                }
+            }
         }
+
         &-graphic {
             &::before {
                 background: {

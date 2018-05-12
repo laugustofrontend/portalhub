@@ -284,13 +284,13 @@
                     <div class="row">
                         <ul class="nav nav-tabs col-lg-6 col-lg-offset-1" role="tablist">
                             <li class="text-center active" role="presentation">
-                                <a href="#" aria-controls="consolidada" role="tab" data-toggle="tab">Posição Consolidada</a>
+                                <a href="#consolidada" aria-controls="consolidada" role="tab" data-toggle="tab">Posição Consolidada</a>
                             </li>
                             <li class="text-center " role="presentation">
-                                <a href="#" aria-controls="financeira" role="tab" data-toggle="tab">Posição Financeira</a>
+                                <a href="#financeira" aria-controls="financeira" role="tab" data-toggle="tab">Posição Financeira</a>
                             </li>
                             <li class="text-center " role="presentation">
-                                <a href="#" aria-controls="carteira" role="tab" data-toggle="tab">Análise de Carteira</a>
+                                <a href="#carteira" aria-controls="carteira" role="tab" data-toggle="tab">Análise de Carteira</a>
                             </li>
                         </ul>
                     </div>
@@ -300,7 +300,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="tab-content col-lg-11 col-lg-offset-1">
-                                <div class="tab-pane" role="tabpanel" id="consolidada">
+                                <div class="tab-pane show active" role="tabpanel" id="consolidada">
                                     <div class="finance-balance row">
                                         <div class="balance-item col-lg-3">
                                             <div class="finance-balance-item_balance">
@@ -359,25 +359,167 @@
                                                 </h3>
                                             </li>
                                             <li role="presentation" class="active">
-                                                <a href="#" class="finance-patrimony-list" aria-controls="finance-list"
+                                                <a href="#" class="finance-patrimony-list" aria-controls="finance-patrimony-list"
                                                 role="tab" data-toggle="tab">
                                                     Lista
                                                 </a>
                                             </li>
                                             <li role="presentation">
-                                                <a href="#" class="finance-patrimony-graphic" aria-controls="finance-graphic"
+                                                <a href="#" class="finance-patrimony-graphic" aria-controls="finance-patrimony-graphic"
                                                 role="tab" data-toggle="tab">
                                                     gráfico
                                                 </a>
                                             </li>
                                         </ul>
 
-                                        <div class="tab-pane" role="tabpanel" id="finance-patrimony-list">
-                                            finance patrimony list
+                                        <div class="finance-patrimony-content col-lg-11">
+                                            <div class="tab-pane show" role="tabpanel" id="finance-patrimony-list">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="finance-patrimony-list-titles row">
+                                                            <div class="col-lg-2">Produto</div>
+                                                            <div class="col-lg-2">Percentagem</div>
+                                                            <div class="col-lg-2">Posição</div>
+                                                            <div class="col-lg-3">
+                                                                Mudar para: <span>1S</span>
+                                                            </div>
+                                                            <div class="col-lg-2">
+                                                                Rendimento
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div id="accordion" role="tablist" aria-multiselectable="true" class="m-b-20">
+                                                            <div class="finance-patrimony-list-item card">
+                                                                <div class="card-header" role="tab" id="headingOne">
+                                                                    <h5 class="mb-0 mt-0 font-16">
+                                                                            <div class="row">
+                                                                                <div class="finance-patrimony-list-item_title col-lg-2">
+                                                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                                                        Ações
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="finance-patrimony-list-item_title col-lg-2">
+                                                                                    <p class="mb-0">33%</p>
+                                                                                </div>
+                                                                                <div class="finance-patrimony-list-item_title col-lg-2">
+                                                                                    <p class="mb-0">240.000,00</p>
+                                                                                </div>
+                                                                                <div class="finance-patrimony-list-item_title col-lg-3">
+                                                                                    Mudar para: <span>1S</span>
+                                                                                </div>
+                                                                                <div class="finance-patrimony-list-item_title col-lg-1 col-lg-offset-1">
+                                                                                    <span class="badge badge-primary">
+                                                                                        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                                                                                        53%
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="finance-patrimony-list-item_title finance-patrimony-list-item_title_plus col-lg-1 text-center">
+                                                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                    </h5>
+                                                                </div>
+
+                                                                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                                    <div class="card-body">
+                                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="finance-patrimony-list-item card">
+                                                                <div class="card-header" role="tab" id="headingTwo">
+                                                                    <h5 class="mb-0 mt-0 font-16">
+                                                                        <div class="row">
+                                                                                <div class="finance-patrimony-list-item_title col-lg-2">
+                                                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                                                        Opções
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="finance-patrimony-list-item_title col-lg-2">
+                                                                                    <p class="mb-0">33%</p>
+                                                                                </div>
+                                                                                <div class="finance-patrimony-list-item_title col-lg-2">
+                                                                                    <p class="mb-0">240.000,00</p>
+                                                                                </div>
+                                                                                <div class="finance-patrimony-list-item_title col-lg-3">
+                                                                                    Mudar para: <span>1S</span>
+                                                                                </div>
+                                                                                <div class="finance-patrimony-list-item_title col-lg-1 col-lg-offset-1">
+                                                                                    <span class="badge badge-primary">
+                                                                                        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                                                                                        53%
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="finance-patrimony-list-item_title finance-patrimony-list-item_title_plus col-lg-1 text-center">
+                                                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                                                                                        aria-expanded="true" aria-controls="collapseTwo">
+                                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                    </h5>
+                                                                </div>
+                                                                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                                    <div class="card-body">
+                                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="finance-patrimony-list-item card">
+                                                                <div class="card-header" role="tab" id="headingThree">
+                                                                    <h5 class="mb-0 mt-0 font-16">
+                                                                        <div class="row">
+                                                                                <div class="finance-patrimony-list-item_title col-lg-2">
+                                                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                                                        Renda Fixa
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="finance-patrimony-list-item_title col-lg-2">
+                                                                                    <p class="mb-0">33%</p>
+                                                                                </div>
+                                                                                <div class="finance-patrimony-list-item_title col-lg-2">
+                                                                                    <p class="mb-0">240.000,00</p>
+                                                                                </div>
+                                                                                <div class="finance-patrimony-list-item_title col-lg-3">
+                                                                                    Mudar para: <span>1S</span>
+                                                                                </div>
+                                                                                <div class="finance-patrimony-list-item_title col-lg-1 col-lg-offset-1">
+                                                                                    <span class="badge badge-primary">
+                                                                                        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                                                                                        53%
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="finance-patrimony-list-item_title finance-patrimony-list-item_title_plus col-lg-1 text-center">
+                                                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                                                                                        aria-expanded="true" aria-controls="collapseThree">
+                                                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                    </h5>
+                                                                </div>
+                                                                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                                    <div class="card-body">
+                                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" role="tabpanel" id="finance-patrimony-graphic">
+                                                finance patrimony graphic
+                                            </div>
                                         </div>
-                                        <div class="tab-pane" role="tabpanel" id="finance-patrimony-graphic">
-                                            finance patrimony graphic
-                                        </div>
+
                                     </div>
                                     <div class="row">
                                     </div>
@@ -396,5 +538,71 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var resizefunc = [];
+    </script>
+
+    <!-- Plugins  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script><!-- Popper for Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/detect.js"></script>
+    <script src="assets/js/fastclick.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/jquery.blockUI.js"></script>
+    <script src="assets/js/waves.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/plugins/switchery/switchery.min.js"></script>
+
+    <!-- Counter Up  -->
+    <script src="assets/plugins/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="assets/plugins/counterup/jquery.counterup.min.js"></script>
+
+    <!-- circliful Chart -->
+    <script src="assets/plugins/jquery-circliful/js/jquery.circliful.min.js"></script>
+    <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- skycons -->
+    <script src="assets/plugins/skyicons/skycons.min.js" type="text/javascript"></script>
+
+    <!-- Page js  -->
+    <script src="assets/pages/jquery.dashboard.js"></script>
+
+    <!-- Custom main Js -->
+    <script src="assets/js/jquery.core.js"></script>
+    <script src="assets/js/jquery.app.js"></script>
+
+
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 100,
+                time: 1200
+            });
+            $('.circliful-chart').circliful();
+        });
+
+        // BEGIN SVG WEATHER ICON
+        if (typeof Skycons !== 'undefined'){
+            var icons = new Skycons(
+                    {"color": "#3bafda"},
+                    {"resizeClear": true}
+                    ),
+                    list  = [
+                        "clear-day", "clear-night", "partly-cloudy-day",
+                        "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
+                        "fog"
+                    ],
+                    i;
+
+            for(i = list.length; i--; )
+                icons.set(list[i], list[i]);
+            icons.play();
+        };
+
+    </script>
 </body>
 </html>
