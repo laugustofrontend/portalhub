@@ -222,7 +222,5 @@ $(document).ready(function() {
         }
       }
     };
-
-    $.plot($("#ordered-bars-chart"), ds, options);
   });
 });
