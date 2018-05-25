@@ -372,7 +372,7 @@
                             <div class="col-sm-12 col-lg-12">
                                 <ul class="nav nav-tabs tabs-bordered">
                                     <li class="nav-item">
-                                        <a href="#consolidada" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                        <a href="#consolidada" data-toggle="tab" aria-expanded="false" class="nav-link active">
                                             Posição Consolidada
                                         </a>
                                     </li>
@@ -382,13 +382,13 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#carteira" data-toggle="tab" aria-expanded="false" class="nav-link active">
+                                        <a href="#carteira" data-toggle="tab" aria-expanded="false" class="nav-link">
                                             Análise de Carteira
                                         </a>
                                     </li>
                                 </ul>
                                 <div class="tab-content">
-                                    <div id="consolidada" class="tab-pane">
+                                    <div id="consolidada" class="tab-pane show active">
                                         <div class="container-fluid">
                                             <!-- INFORMAÇÕES RESUMIDAS DE VALORES -->
                                             <div class="row">
@@ -441,10 +441,7 @@
                                                 </div>
                                             </div>
 
-                                            <!--
-                                                INFORMAÇẼOS SOBRE PATRIMÔNIO DO CLIENTE
-                                            -->
-
+                                            <!-- INFORMAÇẼOS SOBRE PATRIMÔNIO DO CLIENTE -->
                                             <div class="row">
                                                 <div class="col-12 col-sm-12 col-lg-12">
                                                     <div class="patrimony">
@@ -1280,9 +1277,7 @@
                                                                         <div class="portlet">
                                                                             <!-- /primary heading -->
                                                                             <div class="portlet-heading">
-                                                                                <h3 class="portlet-title text-dark">
-                                                                                    Graphics
-                                                                                </h3>
+                                                                                <h3 class="portlet-title text-dark"> Donut Chart </h3>
                                                                                 <div class="portlet-widgets">
                                                                                     <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
                                                                                     <span class="divider"></span>
@@ -1765,84 +1760,61 @@
                                     </div> <!-- FIM TAB FINANCEIRA -->
 
                                     <!-- ANALISE CARTEIRA -->
-                                    <div id="carteira" class="tab-pane show active">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="middle-align" width="95%">Ações</td>
-                                                    <td>
-                                                        <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="fadein" data-plugin="custommodal"
-                                                           data-overlaySpeed="200" data-overlayColor="#36404a">
-                                                           <i class="ion-plus-round"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="middle-align" width="95%">Opções</td>
-                                                    <td>
-                                                        <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="fadein" data-plugin="custommodal"
-                                                           data-overlaySpeed="200" data-overlayColor="#36404a">
-                                                           <i class="ion-plus-round"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="middle-align" width="95%">Renda Fixa</td>
-                                                    <td>
-                                                        <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="fadein" data-plugin="custommodal"
-                                                           data-overlaySpeed="200" data-overlayColor="#36404a">
-                                                           <i class="ion-plus-round"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-                                        <div id="custom-modal" class="modal-demo" style="width: 50%;">
-                                            <button type="button" class="close" onclick="Custombox.close();">
-                                                <span>&times;</span><span class="sr-only">Close</span>
-                                            </button>
-                                            <h4 class="custom-modal-title">Modal title</h4>
-                                            <div class="custom-modal-text">
-                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td width="5%">20%</td>
-                                                            <td width="60%">
-                                                                <div class="progress progress-md mb-0" style="height: 22px !important; width: 20%;">
-                                                                    <div class="progress-bar bg-warning"
-                                                                        role="progressbar"
-                                                                        style="width: 100%"
-                                                                        aria-valuenow="75"
-                                                                        aria-valuemin="0"
-                                                                        aria-valuemax="100"></div>
+                                    <div id="carteira" class="tab-pane">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                Carteira de Investimento
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <div class="row">
+                                                            <div class="col-6 col-sm-6 col-lg-6 text-warning">
+                                                                Meu Perfil
+                                                            </div>
+                                                            <div class="col-6 col-sm-6 col-lg-6 text-warning text-right">
+                                                                Patrimônio
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="portlet">
+                                                            <!-- /primary heading -->
+                                                            <div class="portlet-heading">
+                                                                <h3 class="portlet-title text-dark row" style="width: 95%;">
+                                                                    <div class="col-6 col-sm-6 col-gl-6">
+                                                                        Conservador
+                                                                    </div>
+                                                                    <div class="col-6 col-sm-6 col-gl-6 text-right">
+                                                                        R$ <span class="counter">1,101,400.00</span>
+                                                                    </div>
+                                                                </h3>
+                                                                <div class="portlet-widgets">
+                                                                    <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                                                                    <span class="divider"></span>
+                                                                    <a data-toggle="collapse" data-parent="#accordion1" href="#bg-default"><i class="ion-minus-round"></i></a>
+                                                                    <span class="divider"></span>
+                                                                    <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
                                                                 </div>
-                                                            </td>
-                                                            <td colspan="2" align="right">
-                                                                R$ 200,000.00
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="5%">10%</td>
-                                                            <td width="60%">
-                                                                <div class="progress progress-md mb-0" style="height: 22px !important; width: 10%;">
-                                                                    <div class="progress-bar bg-success"
-                                                                        role="progressbar"
-                                                                        style="width: 100%"
-                                                                        aria-valuenow="75"
-                                                                        aria-valuemin="0"
-                                                                        aria-valuemax="100"></div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="row align-items-center">
+                                                                <div class="col-1 col-sm-1 col-lg-1 text-right">
+                                                                    <i class="fa fa-file-text fa-3x"></i>
                                                                 </div>
-                                                            </td>
-                                                            <td class="text-success">sugestão HUB</td>
-                                                            <td align="right" class="text-success">R$
-                                                                100,000.00
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                                <div class="col-11 col-sm-11 col-lg-11">
+                                                                    Os eu perfil de <span class="text-success">Conservador</span> corresponde com o questionário de suitability
+                                                                </div>
+                                                            </div>
+                                                            <div id="bg-default" class="panel-collapse collapse show">
+                                                                <div class="portlet-body">
+                                                                    <div id="morris-bar-example" style="height: 300px;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /Portlet -->
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div> <!-- FIM TAB ANALISE DE CARTEIRA -->
@@ -2004,6 +1976,12 @@
 
         $(function() {
             $('#mercado').responsiveTable({
+                addDisplayAllBtn: 'btn btn-secondary'
+            });
+        });
+
+        $(function() {
+            $('#analiseCarteira').responsiveTable({
                 addDisplayAllBtn: 'btn btn-secondary'
             });
         });
